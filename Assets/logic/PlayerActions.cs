@@ -69,6 +69,5 @@ public class PlayerActions : MonoBehaviour
     protected void Shoot()
     {
         GameObject bullet = Instantiate(Resources.Load("bullet", typeof(GameObject)), this.transform.Find("ammoSpawner").transform.position,this.transform.localRotation) as GameObject;
-        bullet.transform.Translate(Vector3.forward * 2f * Time.deltaTime);
     }
 }
