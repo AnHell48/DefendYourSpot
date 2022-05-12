@@ -35,7 +35,7 @@ public class PlayerActions : MonoBehaviour
             if ( rotationDirection <= 0)
             {
                 //create a drift effect (continuos movement)
-                rotationDirection++;
+                rotationDirection+= 0.005f;
             }
             else
             {
@@ -47,7 +47,7 @@ public class PlayerActions : MonoBehaviour
             if (rotationDirection >= 0)
             {
                 //create a drift effect 
-                rotationDirection--;
+                rotationDirection-= 0.005f;
             }
             else
             {
@@ -57,7 +57,6 @@ public class PlayerActions : MonoBehaviour
         }
 
         this.transform.Rotate(new Vector3(0,rotationDirection,0));
-        Debug.Log("Rot: " + rotationDirection);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

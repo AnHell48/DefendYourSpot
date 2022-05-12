@@ -14,7 +14,7 @@ public class Bullets : MonoBehaviour
         bulletSpeed = 5f;
         originPos = this.transform.position;
         bulletDistanceLimit = 40f;
-        //how much it damage other
+        //how much damage it does
         damage = 5f;
     }
 
